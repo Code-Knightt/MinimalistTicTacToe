@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+    <main>
+        <div class="background">
+            <div class="play-area">
+                <h1 class="heading">
+                    TIC TAC TOE
+                </h1>
+                <table class="table">
+                    <tr class="row row-1" id="row1">
+                        <td class="data" onclick="iGotClicked(this.id)" id="0"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="1"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="2"></td>
+                    </tr>
+                    <tr class="row row-2" id="row2">
+                        <td class="data" onclick="iGotClicked(this.id)" id="3"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="4"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="5"></td>
+                    </tr>
+                    <tr class="row row-3" id="row3">
+                        <td class="data" onclick="iGotClicked(this.id)" id="6"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="7"></td>
+                        <td class="data" onclick="iGotClicked(this.id)" id="8"></td>
+                    </tr>
+                </table>
+                <h3 class="player" id="player">
+                    Player 1's turn
+                </h3>
+                <h4>Press r to reset</h4>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
