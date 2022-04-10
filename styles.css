@@ -14,10 +14,11 @@ body {
 }
 
 .heading {
-    margin-top: -2rem;
     text-align: center; 
     font-size: 3rem;
     font-weight: 500; 
+    margin: 0;
+    padding-top: 5.5rem;
 }
 
 .play-area {
@@ -37,6 +38,7 @@ body {
     font-size: 2rem;
     table-layout: fixed;
     border-collapse: collapse;
+    position: relative;
 }
 
 .row:not(:last-child) {
@@ -60,4 +62,21 @@ body {
 .player{
     font-size: 2rem;
     font-weight: 100;
+}
+
+.line {
+    border: none;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    background-color: #000;
+    height: 5px;
+    width: 100%;
+    transform-origin: top left;
+}
+
+.reset {
+    cursor: pointer;
 }

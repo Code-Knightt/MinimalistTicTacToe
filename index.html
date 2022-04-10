@@ -15,11 +15,12 @@
 <body>
     <main>
         <div class="background">
+            <h1 class="heading">
+                TIC TAC TOE
+            </h1>
             <div class="play-area">
-                <h1 class="heading">
-                    TIC TAC TOE
-                </h1>
                 <table class="table">
+                    <div><hr class="line" id="line"></div>
                     <tr class="row row-1" id="row1">
                         <td class="data" onclick="iGotClicked(this.id)" id="0"></td>
                         <td class="data" onclick="iGotClicked(this.id)" id="1"></td>
@@ -39,7 +40,7 @@
                 <h3 class="player" id="player">
                     Player 1's turn
                 </h3>
-                <h4>Press r to reset</h4>
+                <h4 class="reset" id="reset">Reset (R)</h4>
             </div>
         </div>
     </main>
